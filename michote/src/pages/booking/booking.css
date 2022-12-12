@@ -1,0 +1,44 @@
+.booking-page-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-details p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+.trip-details h4{
+    margin-bottom: 5px;
+}
+
+.booking-page-container form{
+    padding: 20px;
+}
+
+
+.booking-page-container button{
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #CF2A27;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.booking-page-container span{
+    font-style: italic;
+}
+
+.booking-page-container input{
+    height: 25px;
+    width: 100%;
+}
+
+.booking-form-element{
+    margin: 10px 0;
+}
