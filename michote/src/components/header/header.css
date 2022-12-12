@@ -1,0 +1,10 @@
+
+.navbar-container{
+    margin: 10px 2%;
+}
+
+.me-auto{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
