@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import PartnerRegister from './components/pages/partnerRegister/partnerRegister';
+import Header from './components/header/header';
 
 function App() {
   return (
     <div className="App">
-      <PartnerRegister/>
+      <Header/>
     </div>
   );
 }
