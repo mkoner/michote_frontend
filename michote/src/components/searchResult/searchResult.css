@@ -1,0 +1,53 @@
+.search-result-component{
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    min-height: 100px;
+    padding: 2%;
+    border: 1px solid #CF2A27;
+    border-radius: 6px;
+    margin: 20px auto;
+}
+
+.trip-times{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.dtime-atime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-book{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.company-name{
+    margin: 15px;
+}
+
+
+
+.search-result-component button{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #CF2A27;
+    color: #FFF;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.available-seats{
+    color: #CF2A27;
+    margin-top: 30px;
+}
