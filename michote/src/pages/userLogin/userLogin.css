@@ -36,3 +36,10 @@
 .login-inputs button{
     background-color: #CF2A27;
 }
+
+.register-link button{
+    background-color: #3C84E6;
+    color: #FFF;
+    font-weight: 600;
+    padding: 10px;
+}

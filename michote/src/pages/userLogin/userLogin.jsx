@@ -13,7 +13,10 @@ export default function UserLogin() {
                 <input type="text" name="password" id="" placeholder='Enter your password'/>
                 <button>LOGIN</button>
             </div>
-            
+            <div className="register-link">
+                <p>You don't have an account yet?</p>
+                <button>REGISTER</button>
+            </div>
         </div>
     </div>
   )
