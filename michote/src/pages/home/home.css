@@ -1,0 +1,127 @@
+.home-page{
+    margin: 0;
+    padding: 0;
+}
+
+.search-container{
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+    background-image: url('../../assets//images/bg-im.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    text-align: center;
+    padding-top: 140px;
+}
+.message p{
+    margin: 0;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: rgba(220,220,220, 0,3);
+}
+
+.search-form input{
+    height: 30px;
+    border: none;
+}
+
+.search-form button{
+    background-color: #CF2A27;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.location-input{
+    background-color: #FFF;
+    background-image: url('../../assets/icons/position.png');
+    background-position-x: 10px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 10% 80%;
+    padding-left:40px;
+}
+
+.form-item{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    margin: 10px;
+}
+
+.search-form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+}
+
+.value-icon img{
+    height: 100px;
+}
+
+.value-content{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.value-content p, .value-content h6{
+    margin: 0;
+}
+
+.value-content h6{
+    font-size: 16px;
+    color: #CF2A27;
+}
+
+.values{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.top-destinations{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex: 1;
+    margin: 10px;
+}
+
+.top-destinations-container h3{
+    color: #CF2A27;
+    margin: 0 auto;
+}
+
+.top-destinations-container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.top-destinations .destination img{
+    width: 400px;
+    height: 300px;
+}
