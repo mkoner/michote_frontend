@@ -9,7 +9,7 @@ import Logo from "../../assets/michote-logo.png"
 function Header() {
   return (
     <Navbar bg="white" expand="lg" className='navbar-container' fixed="top">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         <img
               src={Logo}
               width="100"

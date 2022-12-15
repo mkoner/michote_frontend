@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import './home.css'
 
@@ -11,6 +13,28 @@ import addis from "../../assets/images/addis.jpg"
 
 
 export default function Home() {
+    const navigate = useNavigate();
+
+    const [searchData, setSearchData] = useState({
+        from: "",
+        to: "",
+        date: new Date(),
+    });
+
+    const handleChange = (evt) => {
+        const { name, value } = evt.target;
+        setSearchData((prevState) => ({
+            ...prevState,
+            [name]:value,
+        }))
+    }
+
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        console.log(searchData);
+        navigate("/trips")
+    }
+
   return (
     <div className="home-page">
         <div className="search-container">
@@ -24,18 +48,21 @@ export default function Home() {
         <div className="search-form">
             <div className="from form-item">
                 <label htmlFor="from">From</label>
-                <input className='location-input' type="text" name='from'/>
+                <input className='location-input' type="text" 
+                name='from' onChange={handleChange} />
             </div>
             <div className="to form-item">
                 <label htmlFor="to">To</label>
-                <input className='location-input' type="text" name='to'/>
+                <input className='location-input' type="text" 
+                name='to'onChange={handleChange}/>
             </div>
             <div className="date form-item">
                 <label htmlFor="date">When</label>
-                <input className='date-input' type="date" name='date'/>
+                <input className='date-input' type="date" 
+                name='date' onChange={handleChange}/>
             </div>
             <div className="submit form-item">
-                <button>Search</button>
+                <button onClick={handleSubmit}>Search</button>
             </div>
         </div>    
         </div>
