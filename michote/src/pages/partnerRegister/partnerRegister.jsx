@@ -27,7 +27,8 @@ export default function PartnerRegister() {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        console.log("Registered")
+        console.log("Registered");
+        console.log(userData);
     }
 
   return (
@@ -65,7 +66,7 @@ export default function PartnerRegister() {
                       value={userData.country} onChange={handleChange} />
             </div>
             <div className="register-form-item">
-                <label htmlFor="fname">Living city*:</label>
+                <label htmlFor="fname">City*:</label>
                 <input type="text" name='city' placeholder='Entrer the city your company is based'
                       value={userData.city} onChange={handleChange} />
             </div>
@@ -76,12 +77,12 @@ export default function PartnerRegister() {
             </div>
             <div className="register-form-item">
                 <label htmlFor="fname">Create your password*:</label>
-                <input type="text" name='password' placeholder='Enter a password'
+                <input type="password" name='password' placeholder='Enter a password'
                       value={userData.password} onChange={handleChange} />
             </div>
             <div className="register-form-item">
                 <label htmlFor="fname">Confirm your password*:</label>
-                <input type="text" name='confirmedPassword' placeholder='Confirm your password'
+                <input type="password" name='confirmedPassword' placeholder='Confirm your password'
                       value={userData.confirmedPassword} onChange={handleChange} />
             </div>
         </div>

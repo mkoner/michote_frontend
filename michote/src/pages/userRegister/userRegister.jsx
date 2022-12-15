@@ -28,6 +28,7 @@ export default function UserRegister() {
     const handleSubmit = (evt) => {
         evt.preventDefault();
         console.log("Registered")
+        console.log(userData);
     }
 
   return (
@@ -69,12 +70,12 @@ export default function UserRegister() {
             </div>
             <div className="register-form-item">
                 <label htmlFor="fname">Create your password*:</label>
-                <input type="text" name='password' placeholder='Enter a password'
+                <input type="password" name='password' placeholder='Enter a password'
                       value={userData.password} onChange={handleChange} />
             </div>
             <div className="register-form-item">
                 <label htmlFor="fname">Confirm your password*:</label>
-                <input type="text" name='confirmedPassword' placeholder='Confirm your password'
+                <input type="password" name='confirmedPassword' placeholder='Confirm your password'
                       value={userData.confirmedPassword} onChange={handleChange} />
             </div>
         </div>
