@@ -35,8 +35,9 @@
 }
 
 .booking-page-container input{
-    height: 25px;
+    
     width: 100%;
+    padding: 5px;
 }
 
 .booking-form-element{
