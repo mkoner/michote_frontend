@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 import './userLogin.css'
 
 export default function UserLogin() {
+  const navigate = useNavigate();
   return (
     <div className='login-page'>
           <div className='login-div'>
@@ -15,7 +17,7 @@ export default function UserLogin() {
             </div>
             <div className="register-link">
                 <p>You don't have an account yet?</p>
-                <button>REGISTER</button>
+                <button onClick={()=>navigate("/register")}>REGISTER</button>
             </div>
         </div>
     </div>

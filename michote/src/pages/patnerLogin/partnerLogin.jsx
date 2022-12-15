@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 import './partnerLogin.css'
 
 export default function PartnerLogin() {
+  const navigate = useNavigate();
   return (
     <div className='login-page'>
           <div className='login-div'>
@@ -16,7 +18,7 @@ export default function PartnerLogin() {
             </div>
             <div className="register-link">
                 <p>You don't have an account yet?</p>
-                <button>REGISTER</button>
+                <button onClick={()=>navigate("/partners/register")}>REGISTER</button>
             </div>
             
         </div>

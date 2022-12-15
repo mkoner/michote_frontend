@@ -1,10 +1,16 @@
 
 .navbar-container{
-    margin: 10px 2%;
+    margin: 20px 0;
+    border-bottom: 1px solid #000;
+    padding: 0 2%;
 }
 
 .me-auto{
     margin-left: auto;
     display: flex;
     justify-content: space-evenly;
+}
+
+.fixed-top{
+    position: sticky;
 }

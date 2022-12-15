@@ -24,7 +24,7 @@
     align-items: center;
     background-color: #00ffd9;
     padding: 40px;
-    
+    width: 400px;
 }
 
 .p-login-inputs input, .p-login-inputs button{
