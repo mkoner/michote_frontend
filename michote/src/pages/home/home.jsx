@@ -1,6 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
+import {useState, useEffect } from 'react'
+import { useAlert } from 'react-alert'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
 
 import './home.css'
 
@@ -12,14 +14,22 @@ import nairobi from "../../assets/images/nairobi.jpg"
 import addis from "../../assets/images/addis.jpg"
 
 
+
 export default function Home() {
     const navigate = useNavigate();
+    const alert = useAlert()
+    const dispatch = useDispatch();
+
+
 
     const [searchData, setSearchData] = useState({
         from: "",
         to: "",
-        date: new Date(),
+        //date: new Date(),
     });
+    const {from, to} = searchData;
+
+    
 
     const handleChange = (evt) => {
         const { name, value } = evt.target;
@@ -31,8 +41,11 @@ export default function Home() {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        console.log(searchData);
-        navigate("/trips")
+        if(!from || !to){
+            alert.error('Destinations cannot be empty');
+            return;
+        }
+        navigate(`/search-trips/${from}/${to}`) 
     }
 
   return (

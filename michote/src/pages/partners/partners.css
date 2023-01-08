@@ -1,0 +1,12 @@
+.partners-page{
+    margin-top: 80px;
+    min-height: 70vh;
+    text-align: center;
+}
+
+
+.partners-page .about  span{
+    color: #CF2A27;
+    font-style: italic;
+    font-weight: 600;
+}

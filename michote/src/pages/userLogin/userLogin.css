@@ -1,4 +1,5 @@
 .login-page{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,15 +18,17 @@
     margin: 10px auto;
 }
 
+.login-div{
+    width: 40%;
+}
+
 .login-inputs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2D7BE4;
-    padding: 40px;
-    width: 400px;
-    
+    padding: 0 10%;
 }
 
 .login-inputs input, .login-inputs button{
@@ -46,3 +49,28 @@
     font-weight: 600;
     padding: 10px;
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .login-div{
+        width: 70%;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .login-div{
+        width: 90%;
+    }
+
+    
+}
+@media screen and (max-width: 178px){
+    .login-div{
+        margin-top: 100px;
+    }
+}
+
+

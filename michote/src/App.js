@@ -11,6 +11,15 @@ import PartnerLogin from './pages/patnerLogin/partnerLogin';
 import PartnerRegister from './pages/partnerRegister/partnerRegister';
 import Home from './pages/home/home';
 import TripsPage from './pages/tripsPage/tripsPage';
+import TripPage from './pages/tripPage/tripPage';
+import PartnerPage from './pages/partnerPage/partnerPage';
+import CustomerPage from './pages/customerPage/customerPage';
+import PartnerTripsPage from './pages/trips/trips';
+import CreateTrip from './pages/createTrip/createTrip';
+import CustomerBookings from './pages/customerBookings/customerBookings';
+import BookingSuccess from './pages/bookingSuccess/bookingSuccess';
+import About from './pages/about/about';
+import Partners from './pages/partners/partners';
 
 function App() {
   return (
@@ -21,10 +30,19 @@ function App() {
         <Route path='/' element={<Home/> } />
         <Route path='/login' element={<UserLogin/>} />
         <Route path='/partners/login' element={<PartnerLogin/>} />
-        <Route path='/book' element={<BookingPage/>} />
+        <Route path='/book/:id' element={<BookingPage/>} />
+        <Route path='/booking/success' element={<BookingSuccess/>} />
         <Route path='/register' element={<UserRegister/>} />
         <Route path='/partners/register' element={<PartnerRegister/>} />
-        <Route path='/trips' element={<TripsPage/>} />
+        <Route path='/partners/trips' element={<PartnerTripsPage/>} />
+        <Route path='/search-trips/:from/:to' element={<TripsPage/>} />
+        <Route path='/partners/profile' element={<PartnerPage/>} />
+        <Route path='/routes/:id' element={<TripPage/>} />
+        <Route path='/customers/profile' element={<CustomerPage/>} />
+        <Route path='/create-trip' element={<CreateTrip/>} />
+        <Route path='/customers/bookings' element={<CustomerBookings/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/partners' element={<Partners/>} />
       </Routes>
       <Footer />
       </BrowserRouter>
