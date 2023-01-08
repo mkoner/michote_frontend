@@ -1,6 +1,25 @@
 .trips-page{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     flex: 1;
     min-height: 70vh;
+}
+
+.no-trips-found{
+    margin-top: 50px;
+    min-height: 70vh;
+    text-align: center;
+    
+}
+
+.no-trips-found p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.no-trips-found p span{
+    color: #CF2A27;
+    font-style: italic;
 }

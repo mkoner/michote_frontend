@@ -1,0 +1,14 @@
+.trips-page{
+    margin: 0;
+    margin-top: 50px;
+}
+
+.trips-page-container{
+    margin: 20px;
+}
+
+.trips-page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

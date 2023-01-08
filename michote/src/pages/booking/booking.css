@@ -1,5 +1,5 @@
-.booking-page-container{
-    margin-top: 40px;
+.booking-page-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -7,21 +7,26 @@
     align-items: center;
 }
 
-.trip-details p{
+.booking-trip-details {
+    margin: auto;
+}
+
+.booking-trip-details p {
     margin: 0;
     padding: 10px 0;
 }
 
-.trip-details h4{
+.trip-details h4 {
     margin-bottom: 5px;
 }
 
-.booking-page-container form{
-    padding: 20px;
+.booking-page-container form {
+    padding: 2%;
+    width: 25%;
 }
 
 
-.booking-page-container button{
+.booking-page-container button {
     margin: 10px auto;
     width: 100%;
     padding: 10px;
@@ -30,16 +35,35 @@
     font-weight: 700;
 }
 
-.booking-page-container span{
+.booking-page-container span {
     font-style: italic;
 }
 
-.booking-page-container input{
-    
+.booking-page-container input {
+
     width: 100%;
     padding: 5px;
 }
 
-.booking-form-element{
+.booking-form-element {
     margin: 10px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .booking-page-container form {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .booking-page-container form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 178px) {
+    .booking-page-container form {
+        width: 100%;
+    }
 }
